@@ -7,9 +7,14 @@ Feature: Log into Facebook
     #     Given I am not logged in
 
     @watch
-    Scenario: I can access login view
+    Scenario: I can input username
         Given I navigate to Facebook
         And Input "example@email.com"
-        And Input "password"
-        When I click "Log In"
-        Then I see "Home"
+
+    @watch
+    Scenario: I can input password
+        Given I input "password"
+
+    @watch
+    Scenario: I can click Log In
+        Given I click "Log In"

@@ -14,7 +14,7 @@ module.exports = function () {
       .setValue('input[name="pass"]', password);
   });
 
-  this.Given(/^I click "([^"]*)"$/, function (login) {
+  this.Given(/^I click Log In button$/, function () {
     client
       .leftClick('#u_0_n');
   });

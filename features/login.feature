@@ -17,4 +17,4 @@ Feature: Log into Facebook
 
     @watch
     Scenario: I can click Log In
-        Given I click "Log In"
+        Given I click Log In button
